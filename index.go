@@ -3,10 +3,10 @@ package decoder
 type Pack struct {
 	ID    ID `json:"id"`
 	Blobs []struct {
-		ID     ID     `json:"id"`
-		Type   string `json:"type"`
-		Offset int    `json:"offset"`
-		Length int    `json:"length"`
+		ID     ID       `json:"id"`
+		Type   BlobType `json:"type"`
+		Offset int      `json:"offset"`
+		Length int      `json:"length"`
 	} `json:"blobs"`
 }
 
